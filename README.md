@@ -17,9 +17,11 @@ Caffe | res10_300x300_ssd_iter_140000_fp16.caffemodel, deploy.prototxt |  [WIDER
 MTCNN | - | [WIDER](http://shuoyang1213.me/WIDERFACE/) dataset which contains 32,203 public images and 393,703 labelled faces | 
 
 ## results
-Models | corrected identified out of 25 images| 
---- | --- | 
-Haar Cascade| face - 25, nose - 4, mouth - 2 |
-DLib | face - 25, nose - 4, mouth - 2 | 
-Caffe | face - 25, nose - 4, mouth - 2 | 
-MTCNN | face - 25, nose - 4, mouth - 2 | 
+<img align="center" alt="fishes" width="800" height="500" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/haar%20cascade.png">
+1. Haar-Cascade: Although the face was identified in each image, the nose and mouth were not correctly identified and in some cases not identified at all
+<img align="center" alt="fishes" width="800" height="500" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/dlib.png">
+2. DLib: In most of the images the facial landmarks were identified but in most side profiles and a few frontal images, the nose-mouth detections were incorrect
+<img align="center" alt="fishes" width="800" height="500" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/Caffe.png">
+3. Caffe: Although not as good as Dlib, in quite a few images the facial landmarks were identified but in most side profiles and some frontal images, the nose-mouth detections were incorrect. In some images, facial landmarks were not identified at all.
+<img align="center" alt="fishes" width="800" height="500" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/mtcnn.png">
+4. MTCNN: This model was not great at detecting thermal images as it identified only 4 images(all frontal) to have facial landmarks. 
