@@ -16,12 +16,15 @@ DLib | shape_predictor_68_face_landmarks.dat | point iBUG 300-W dataset |
 Caffe | res10_300x300_ssd_iter_140000_fp16.caffemodel, deploy.prototxt |  [WIDER](http://shuoyang1213.me/WIDERFACE/) dataset which contains 32,203 public images and 393,703 labelled faces | 
 MTCNN | - | [WIDER](http://shuoyang1213.me/WIDERFACE/) dataset which contains 32,203 public images and 393,703 labelled faces | 
 
-## results
-<img align="center" alt="fishes" width="800" height="500" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/haar%20cascade.png">
-1. Haar-Cascade: Although the face was identified in each image, the nose and mouth were not correctly identified and in some cases not identified at all
-<img align="center" alt="fishes" width="800" height="500" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/dlib.png">
-2. DLib: In most of the images the facial landmarks were identified but in most side profiles and a few frontal images, the nose-mouth detections were incorrect
-<img align="center" alt="fishes" width="800" height="500" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/Caffe.png">
-3. Caffe: Although not as good as Dlib, in quite a few images the facial landmarks were identified but in most side profiles and some frontal images, the nose-mouth detections were incorrect. In some images, facial landmarks were not identified at all.
-<img align="center" alt="fishes" width="800" height="500" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/mtcnn.png">
-4. MTCNN: This model was not great at detecting thermal images as it identified only 4 images(all frontal) to have facial landmarks. 
+## Results
+<img align="center" alt="HC" width="600" height="600" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/haar%20cascade.png">
+Although the face was identified in each image, the nose and mouth were not correctly identified and in some cases not identified at all
+<img align="center" alt="DLIB" width="800" height="600" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/dlib.png">
+In most of the images the facial landmarks were identified but in most side profiles and a few frontal images, the nose-mouth detections were incorrect
+<img align="center" alt="CAFFE" width="800" height="600" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/Caffe.png">
+Although not as good as Dlib, in quite a few images the facial landmarks were identified but in most side profiles and some frontal images, the nose-mouth detections were incorrect. In some images, facial landmarks were not identified at all.
+<img align="center" alt="MTCNN" width="500" height="500" src="https://github.com/SayanaVrgs/Detection_of_facial_landmarks_in_thermal_images_using_Computer_Vision_models/blob/main/mtcnn.png">
+This model was not great at detecting thermal images as it identified only 4 images to have facial landmarks. 
+
+## Conclusion
+A major reason why such well-known computer vision models failed was due to a lack of training data, more specifically, a lack of thermal image datasets. There are no readily available thermal images that can used to train the computer vision models. Hence thermal data collection is a major aspect that one must consider before embarking on training a computer vision model.
