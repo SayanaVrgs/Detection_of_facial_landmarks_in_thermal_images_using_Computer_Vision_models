@@ -6,6 +6,7 @@ Thermal imaging stands as a remarkable and compact technique for detecting, quan
 
 ## Dataset used
 The  thermal images used in this project were sourced from [Université Laval Face Motion and Time-Lapse Video Database](http://www.qirt.org/liens/FMTV.htm) About 25 images of frontal and side profile views were chosen of mixed gender, some with presence or absence of facial hair and spectacles. Each model was then tested to detect facial landmarks (namely the face, nose, and mouth).
+
 <sub> Note: To access the thermal dataset please reach out to personnel mentioned on the [website](http://www.qirt.org/liens/FMTV.htm)</sub>
 
 ## Models used
